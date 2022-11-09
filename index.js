@@ -6,13 +6,19 @@ import academicTitles from './data/academicTitles.json'
 
 const isAcademic = (title) => academicTitles.includes(title)
 const titlesCompare = R.descend(R.path(['titles', 'length']))
-const format = (candidate) => `${candidate.titles.join(' ')} ${candidate.name}`
+const format = (candidate, opts) =>
+  `${opts.showTitles ? candidate.titles.join(' ') : ''} ${candidate.name}`
+const formatCurried = R.curry(R.flip(format))
 
 const getSmartest = R.pipe(
-  R.map((cand) => R.evolve({ titles: R.filter(isAcademic) }, cand)),
+  R.map(R.evolve({ titles: R.filter(isAcademic) })),
   R.sort(titlesCompare),
   R.head,
-  format
+  formatCurried({ showTitles: false })
 )
 
 getSmartest(candidates) /*?*/
+
+// THIS IS CURRYING
+// R.sort(titlesCompare, candidates)
+// R.sort(titlesCompare)(candidates)
