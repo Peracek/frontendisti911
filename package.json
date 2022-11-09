@@ -1,0 +1,12 @@
+{
+  "name": "frontendisti911",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "^0.28.0"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.28.18"
+  }
+}

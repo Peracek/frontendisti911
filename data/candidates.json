@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Andrej Babiš",
+    "titles": ["Ing."],
+    "sex": "male",
+    "bornOn": "1954-9-2",
+    "bornAt": "Bratislava"
+  },
+  {
+    "name": "Pavel Fischer",
+    "titles": ["Mgr."],
+    "sex": "male",
+    "bornOn": "1965-8-26",
+    "bornAt": "Praha"
+  },
+  {
+    "name": "Petr Pavel",
+    "titles": ["arm. gen. v.v.", "Ing.", "M.A."],
+    "sex": "male",
+    "bornOn": "1961-11-1.",
+    "bornAt": "Planá"
+  },
+  {
+    "name": "Danuše Nerudová",
+    "titles": ["prof.", "Ing.", "Ph.D."],
+    "sex": "female",
+    "bornOn": "1979-1-4.",
+    "bornAt": "Brno"
+  }
+]
